@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cleveland Bloomfield | Life, Health & Medicare Specialist | Southwest Florida</title>
-<meta name="description" content="Cleveland Bloomfield - Licensed Insurance Broker in Port Charlotte, FL. Specializing in Life Insurance, Annuities, Medicare, Final Expense & Mortgage Protection serving Southwest Florida.">
-<meta name="keywords" content="life insurance Port Charlotte FL, Medicare Southwest Florida, annuities Port Charlotte, final expense insurance Florida, Cleveland Bloomfield insurance">
-<meta property="og:title" content="Cleveland Bloomfield | Insurance Specialist | Southwest Florida">
-<meta property="og:description" content="Licensed insurance broker in Port Charlotte, FL. Life Insurance, Medicare, Annuities — comparing 27+ A-rated carriers for you.">
+<title>Classique Insurance Group LLC | Cleveland Bloomfield | Southwest Florida</title>
+<meta name="description" content="Classique Insurance Group LLC — Cleveland Bloomfield, Licensed Insurance Broker in Port Charlotte, FL. Life Insurance, Medicare, Annuities, IULs, Marketplace Plans. Licensed in FL, TX, NC & PA.">
+<meta name="keywords" content="Classique Insurance Group, Cleveland Bloomfield, life insurance Port Charlotte FL, Medicare Southwest Florida, annuities, IUL, marketplace health plans, final expense insurance Florida">
+<meta property="og:title" content="Classique Insurance Group LLC | Cleveland Bloomfield">
+<meta property="og:description" content="Licensed independent broker serving FL, TX, NC & PA. Comparing 27+ A-rated carriers to find your perfect plan.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,77 +19,95 @@
 <!-- NAV -->
 <nav id="navbar">
   <a href="#" class="nav-logo">
-    Cleveland Bloomfield
-    <span>Insurance Specialist</span>
+    <span class="logo-main">Classique Insurance Group</span>
+    <span class="logo-sub">LLC · Cleveland Bloomfield</span>
   </a>
-  <ul class="nav-links">
+  <ul class="nav-links" id="navLinks">
     <li><a href="#services">Services</a></li>
     <li><a href="#medicare">Medicare</a></li>
     <li><a href="#annuities">Annuities</a></li>
     <li><a href="#about">About</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="tel:7547574524" class="nav-cta">📞 (754) 757-4524</a>
-  <div class="hamburger" onclick="toggleMenu()">
+  <a href="tel:9412766928" class="nav-cta">📞 (941) 276-6928</a>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
     <span></span><span></span><span></span>
-  </div>
+  </button>
 </nav>
 
 <!-- HERO -->
 <section class="hero" id="home">
-  <div class="hero-grid-bg"></div>
+  <div class="hero-particles" id="particles"></div>
   <div class="hero-inner">
     <div class="hero-content">
-      <div class="hero-badge">Serving Southwest Florida</div>
-      <h1>Protecting What <em>Matters Most</em> to Your Family</h1>
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Licensed in FL · TX · NC · PA
+      </div>
+      <h1>Your Family Deserves a Plan Built for <em>Their</em> Future</h1>
       <p class="hero-sub">
-        Licensed insurance broker specializing in Life Insurance, Annuities, and Medicare — helping families in Port Charlotte and across Southwest Florida build lasting financial security.
+        Classique Insurance Group LLC — independent broker Cleveland Bloomfield compares 27+ A-rated carriers to find the right life, health, and retirement coverage for you and the people you love most.
       </p>
       <div class="hero-actions">
-        <a href="https://calendly.com/bcbloom3865" target="_blank" class="btn-primary">Book a Free Consultation →</a>
-        <a href="#services" class="btn-outline">View Services</a>
+        <a href="https://calendly.com/bcbloom3865" target="_blank" class="btn-primary">
+          <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM4 8h12v8H4V8z"/></svg>
+          Book a Free Consultation
+        </a>
+        <a href="tel:9412766928" class="btn-outline">
+          <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+          Call Now
+        </a>
       </div>
       <div class="hero-stats">
         <div class="hero-stat">
-          <div class="num">6+</div>
-          <div class="lbl">Years Expert</div>
+          <div class="num">9+</div>
+          <div class="lbl">Years Licensed</div>
         </div>
         <div class="hero-stat">
           <div class="num">27+</div>
           <div class="lbl">A-Rated Carriers</div>
         </div>
         <div class="hero-stat">
+          <div class="num">4</div>
+          <div class="lbl">States Licensed</div>
+        </div>
+        <div class="hero-stat">
           <div class="num">SW FL</div>
-          <div class="lbl">Coverage Area</div>
+          <div class="lbl">Home Base</div>
         </div>
       </div>
     </div>
 
     <div class="hero-photo-wrap">
-      <div class="floating-badge">
-        <div class="num">A+</div>
-        <div class="lbl">Rated Carriers</div>
-      </div>
+      <div class="hero-glow"></div>
       <div class="hero-photo-card">
         <div class="hero-photo-bg">
-          <img src="assets/images/headshot.jpg" alt="Cleveland Bloomfield, Licensed Insurance Broker">
+          <img src="assets/images/headshot.jpg" alt="Cleveland Bloomfield, Licensed Insurance Broker, Classique Insurance Group LLC">
         </div>
         <div class="hero-photo-overlay">
-          <div class="hero-npn">
-            🛡️ License NPN# <span>18429314</span>
-          </div>
+          <div class="hero-npn">🛡️ NPN# <span>18429314</span></div>
           <div class="hero-name">Cleveland Bloomfield</div>
-          <div class="hero-title-tag">Licensed Insurance Broker</div>
+          <div class="hero-title-tag">Classique Insurance Group LLC</div>
           <div class="hero-tags">
             <span class="hero-tag">Life Insurance</span>
             <span class="hero-tag">Medicare</span>
             <span class="hero-tag">Annuities</span>
-            <span class="hero-tag">Final Expense</span>
-            <span class="hero-tag">Mortgage Protection</span>
+            <span class="hero-tag">IUL</span>
+            <span class="hero-tag">Marketplace Plans</span>
           </div>
         </div>
       </div>
+      <div class="floating-badge">
+        <div class="num">A+</div>
+        <div class="lbl">Carriers</div>
+      </div>
     </div>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <span>Scroll to explore</span>
+    <div class="scroll-arrow"></div>
   </div>
 </section>
 
@@ -111,46 +129,74 @@
 <!-- SERVICES -->
 <section class="services-section" id="services">
   <div class="section-header reveal">
-    <div class="section-tag">What I Offer</div>
-    <h2 class="section-title">Comprehensive Coverage for Every Stage of Life</h2>
-    <p class="section-desc">From protecting your family today to securing your retirement tomorrow — I compare dozens of top-rated carriers to find the right fit for you.</p>
+    <div class="section-tag">What We Offer</div>
+    <h2 class="section-title">Coverage for Every Chapter of Life</h2>
+    <p class="section-desc">From protecting your family today to planning your retirement income — we compare the best carriers to find what's right for you.</p>
   </div>
   <div class="services-grid">
     <div class="service-card reveal">
-      <div class="service-icon">🛡️</div>
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="26" height="26"><path d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+      </div>
       <h3>Final Expense Insurance</h3>
-      <p>Guaranteed coverage for life with locked-in prices that never increase. Designed to cover all final expenses at the time of death — giving your family peace of mind when it matters most.</p>
-      <a href="https://calendly.com/bcbloom3865" target="_blank" class="service-link">Get a Quote →</a>
+      <p>Guaranteed coverage with locked-in prices that never increase. Give your family complete peace of mind when it matters most.</p>
+      <a href="https://calendly.com/bcbloom3865" target="_blank" class="service-link">Get a Quote <span>→</span></a>
     </div>
     <div class="service-card reveal">
-      <div class="service-icon">🏠</div>
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="26" height="26"><path d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
+      </div>
       <h3>Mortgage Protection</h3>
-      <p>Ensure your home is paid off in the event of death or disability. 90% of Americans cannot sustain the same lifestyle without their spouse's income — don't let your family be in that 90%.</p>
-      <a href="https://calendly.com/bcbloom3865" target="_blank" class="service-link">Get a Quote →</a>
+      <p>Ensure your home is paid off in the event of death or disability. Protect your family's most important asset.</p>
+      <a href="https://calendly.com/bcbloom3865" target="_blank" class="service-link">Get a Quote <span>→</span></a>
     </div>
     <div class="service-card reveal">
-      <div class="service-icon">💊</div>
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="26" height="26"><path d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg>
+      </div>
       <h3>Medicare Plans</h3>
-      <p>Expert guidance through Medicare Advantage, Supplement, and Part D prescription drug plans. I help you compare options and navigate enrollment so you're never left unprotected.</p>
-      <a href="#medicare" class="service-link">Learn More →</a>
+      <p>Expert guidance through Medicare Advantage, Supplement/Medigap, and Part D. Navigate enrollment with confidence.</p>
+      <a href="#medicare" class="service-link">Learn More <span>→</span></a>
     </div>
     <div class="service-card reveal">
-      <div class="service-icon">📈</div>
-      <h3>Lifetime Retirement Income</h3>
-      <p>Permanent life policies that accumulate compounding cash value alongside your death benefit — structured to pay out lifetime retirement income so you never outlive your savings.</p>
-      <a href="https://calendly.com/bcbloom3865" target="_blank" class="service-link">Get My Report →</a>
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="26" height="26"><path d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"/></svg>
+      </div>
+      <h3>IUL / Retirement Income</h3>
+      <p>Indexed Universal Life policies with tax-advantaged cash value growth — creating lifetime retirement income you can't outlive.</p>
+      <a href="https://calendly.com/bcbloom3865" target="_blank" class="service-link">Get My Report <span>→</span></a>
     </div>
     <div class="service-card reveal">
-      <div class="service-icon">💼</div>
-      <h3>Term Life Insurance</h3>
-      <p>Affordable, straightforward protection for the years your family needs it most. Compare rates across 27+ A-rated carriers to lock in the best coverage at the lowest premium.</p>
-      <a href="https://calendly.com/bcbloom3865" target="_blank" class="service-link">Get a Quote →</a>
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="26" height="26"><path d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+      </div>
+      <h3>Children's Health Plans</h3>
+      <p>Affordable health coverage tailored for your children, ensuring they're protected from their first day forward.</p>
+      <a href="https://calendly.com/bcbloom3865" target="_blank" class="service-link">Get a Quote <span>→</span></a>
     </div>
     <div class="service-card reveal">
-      <div class="service-icon">🏦</div>
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="26" height="26"><path d="M9 14.25l6-6m4.5-3.493V21.75l-3.75-1.5-3.75 1.5-3.75-1.5-3.75 1.5V4.757c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0c1.1.128 1.907 1.077 1.907 2.185z"/></svg>
+      </div>
+      <h3>Marketplace Health Plans</h3>
+      <p>Helping individuals and families find and enroll in ACA Marketplace plans that fit their budget and health needs.</p>
+      <a href="https://calendly.com/bcbloom3865" target="_blank" class="service-link">Get a Quote <span>→</span></a>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="26" height="26"><path d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0"/></svg>
+      </div>
+      <h3>Term & Permanent Life</h3>
+      <p>Compare rates across 27+ carriers for affordable term coverage or permanent life with growing cash value benefits.</p>
+      <a href="https://calendly.com/bcbloom3865" target="_blank" class="service-link">Get a Quote <span>→</span></a>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="26" height="26"><path d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.97zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.97z"/></svg>
+      </div>
       <h3>Annuities</h3>
-      <p>Fixed, indexed, and variable annuities that provide guaranteed income streams in retirement. Protect your nest egg from market volatility while securing predictable monthly income.</p>
-      <a href="#annuities" class="service-link">Learn More →</a>
+      <p>Fixed, indexed, and income annuities that provide guaranteed retirement income while protecting your nest egg from volatility.</p>
+      <a href="#annuities" class="service-link">Learn More <span>→</span></a>
     </div>
   </div>
 </section>
@@ -159,36 +205,44 @@
 <section class="why-section" id="about">
   <div class="why-grid">
     <div class="why-left reveal">
-      <div class="section-tag" style="color:var(--gold)">Why Choose Cleveland</div>
+      <div class="section-tag" style="color:var(--gold)">Why Choose Us</div>
       <h2 class="section-title" style="color:white;margin-bottom:16px;">An Independent Broker Working Entirely for <em style="color:var(--gold);font-style:normal">You</em></h2>
-      <p class="section-desc" style="margin-bottom:40px;">Unlike captive agents tied to one company, I'm independent — meaning I shop the entire market to find what's truly best for your situation, budget, and goals.</p>
+      <p class="section-desc" style="margin-bottom:40px;color:rgba(255,255,255,0.6)">Unlike captive agents, we're independent — shopping the entire market to find what's truly best for your family's situation, budget, and goals.</p>
       <ul class="why-points">
         <li class="why-point">
-          <div class="why-point-icon">🎯</div>
+          <div class="why-point-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
           <div class="why-point-body">
             <h4>Independent &amp; Unbiased</h4>
-            <p>I compare 27+ A-rated carriers with no loyalty to any single company — only loyalty to finding your best option.</p>
+            <p>27+ A-rated carriers compared with no loyalty to any single company — only loyalty to finding your best option.</p>
           </div>
         </li>
         <li class="why-point">
-          <div class="why-point-icon">📍</div>
+          <div class="why-point-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+          </div>
           <div class="why-point-body">
-            <h4>Local Southwest Florida Expert</h4>
-            <p>Based in Port Charlotte, serving Charlotte, Lee, Sarasota, and DeSoto counties. I know this community because I'm part of it.</p>
+            <h4>Licensed in 4 States</h4>
+            <p>Florida, Texas, North Carolina, and Pennsylvania — serving clients across the country with the same personal care.</p>
           </div>
         </li>
         <li class="why-point">
-          <div class="why-point-icon">🤝</div>
+          <div class="why-point-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/></svg>
+          </div>
           <div class="why-point-body">
             <h4>No Pressure. No Jargon.</h4>
-            <p>I educate first, sell second. You'll always understand exactly what you're getting and why it's the right fit before you sign anything.</p>
+            <p>We educate first, sell second. You'll understand exactly what you're getting before signing anything.</p>
           </div>
         </li>
         <li class="why-point">
-          <div class="why-point-icon">🔒</div>
+          <div class="why-point-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+          </div>
           <div class="why-point-body">
             <h4>Licensed &amp; Verified</h4>
-            <p>NPN# 18429314 with 6+ years of experience placing policies and helping clients in Southwest Florida protect their families.</p>
+            <p>NPN# 18429314 · 9+ years placing policies and serving families across SW Florida and beyond.</p>
           </div>
         </li>
       </ul>
@@ -200,15 +254,16 @@
           <img src="assets/images/headshot.jpg" alt="Cleveland Bloomfield">
         </div>
         <h3>Cleveland Bloomfield</h3>
-        <p class="subtitle">Licensed Insurance Specialist</p>
+        <p class="subtitle">Classique Insurance Group LLC</p>
         <div class="npn-pill">NPN# 18429314</div>
         <div class="about-facts">
           <div class="about-fact"><span>✝️</span> Faith, God &amp; Family</div>
           <div class="about-fact"><span>👮🏾‍♂️</span> Former Law Enforcement Officer</div>
-          <div class="about-fact"><span>👨🏾‍⚕️</span> Former Nurse — understands health deeply</div>
-          <div class="about-fact"><span>📍</span> Port Charlotte, FL — Serving SW Florida</div>
-          <div class="about-fact"><span>🐶</span> Animal Lover &amp; Community Member</div>
-          <div class="about-fact"><span>⏱️</span> 6+ Years Insurance Experience</div>
+          <div class="about-fact"><span>👨🏾‍⚕️</span> Former Nurse — health expertise</div>
+          <div class="about-fact"><span>💍</span> Married 36 years and counting</div>
+          <div class="about-fact"><span>👨‍👩‍👧‍👦</span> Father of 3 adult children &amp; grandchildren</div>
+          <div class="about-fact"><span>📍</span> SW Florida — Serving entire state of FL</div>
+          <div class="about-fact"><span>⏱️</span> 9+ Years Insurance Experience</div>
         </div>
         <div class="family-photo-wrap">
           <img src="assets/images/family.jpg" alt="Cleveland Bloomfield and his family">
@@ -227,10 +282,10 @@
 <section class="medicare-section" id="medicare">
   <div class="medicare-inner">
     <div class="medicare-content reveal">
-      <div class="section-header">
+      <div class="section-header" style="text-align:left;margin-bottom:32px;">
         <div class="section-tag">Medicare Specialist</div>
-        <h2 class="section-title">Navigating Medicare Doesn't Have to Be Confusing</h2>
-        <p class="section-desc">With dozens of plan options and enrollment windows to track, Medicare can feel overwhelming. I simplify the process and make sure you get the right coverage at the right time.</p>
+        <h2 class="section-title">Medicare Made Simple</h2>
+        <p class="section-desc">With dozens of plan options and enrollment windows to navigate, Medicare can feel overwhelming. I simplify everything and make sure you're covered right.</p>
       </div>
       <div class="medicare-steps">
         <div class="medicare-step">
@@ -244,21 +299,21 @@
           <div class="medicare-step-num">2</div>
           <div>
             <h4>Compare Your Options</h4>
-            <p>I present and explain all available Medicare Advantage, Supplement (Medigap), and Part D plans in your area.</p>
+            <p>I present all available Medicare Advantage, Supplement (Medigap), and Part D plans in your area.</p>
           </div>
         </div>
         <div class="medicare-step">
           <div class="medicare-step-num">3</div>
           <div>
             <h4>Enroll Without the Hassle</h4>
-            <p>I handle the paperwork and enrollment process for you — no fees, no commissions from you, ever.</p>
+            <p>I handle the paperwork and enrollment — no fees, no commissions from you, ever.</p>
           </div>
         </div>
         <div class="medicare-step">
           <div class="medicare-step-num">4</div>
           <div>
-            <h4>Ongoing Annual Reviews</h4>
-            <p>Plans change every year. I'll review your coverage each fall during open enrollment to make sure you're still in the best plan.</p>
+            <h4>Annual Reviews Included</h4>
+            <p>Plans change every year. I'll review your coverage each fall to ensure you're still in the best plan.</p>
           </div>
         </div>
       </div>
@@ -279,28 +334,28 @@
           <div class="plan-letter blue">B</div>
           <div class="plan-info">
             <h4>Medicare Part B</h4>
-            <p>Medical insurance — doctor visits, outpatient services, preventive care</p>
+            <p>Medical insurance — doctor visits, outpatient care, preventive services</p>
           </div>
         </div>
         <div class="medicare-plan">
           <div class="plan-letter red">C</div>
           <div class="plan-info">
             <h4>Medicare Advantage (Part C)</h4>
-            <p>All-in-one alternative to Original Medicare — often includes dental, vision &amp; hearing</p>
+            <p>All-in-one plan — often includes dental, vision &amp; hearing benefits</p>
           </div>
         </div>
         <div class="medicare-plan">
           <div class="plan-letter green">D</div>
           <div class="plan-info">
             <h4>Part D Prescription Drug</h4>
-            <p>Covers prescription medications — choose the plan that covers your specific drugs</p>
+            <p>Covers your specific medications — choose the plan that works for you</p>
           </div>
         </div>
         <div class="medicare-plan">
           <div class="plan-letter purple">SUP</div>
           <div class="plan-info">
             <h4>Medicare Supplement (Medigap)</h4>
-            <p>Fills the gaps Original Medicare doesn't cover — predictable out-of-pocket costs</p>
+            <p>Fills gaps Original Medicare doesn't cover — predictable out-of-pocket costs</p>
           </div>
         </div>
       </div>
@@ -314,23 +369,32 @@
     <div class="section-header reveal">
       <div class="section-tag">Retirement Planning</div>
       <h2 class="section-title">Annuities — Guaranteed Income You Can't Outlive</h2>
-      <p class="section-desc">In an uncertain market, annuities offer a safe harbor. I help you understand your options and build a retirement strategy that generates reliable income for life.</p>
+      <p class="section-desc">In an uncertain market, annuities offer a safe harbor. We build a retirement strategy that generates reliable income for life.</p>
     </div>
     <div class="annuity-cards">
       <div class="annuity-card reveal">
-        <span class="icon">📊</span>
+        <div class="annuity-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5"/></svg>
+        </div>
         <h3>Fixed Annuities</h3>
         <p>Guaranteed interest rate with no market risk. Your principal is protected and grows at a locked-in rate — ideal for conservative savers who want predictability.</p>
+        <a href="https://calendly.com/bcbloom3865" target="_blank" class="service-link">Learn More <span>→</span></a>
       </div>
       <div class="annuity-card reveal">
-        <span class="icon">📈</span>
+        <div class="annuity-card-icon featured">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"/></svg>
+        </div>
         <h3>Fixed Indexed Annuities</h3>
-        <p>Growth linked to market indexes like the S&amp;P 500 — with a floor that protects you from losses. Participate in market upside without downside risk.</p>
+        <p>Growth linked to market indexes like the S&amp;P 500 — with a floor that protects you from losses. Participate in upside without downside risk.</p>
+        <a href="https://calendly.com/bcbloom3865" target="_blank" class="service-link">Learn More <span>→</span></a>
       </div>
       <div class="annuity-card reveal">
-        <span class="icon">🔄</span>
+        <div class="annuity-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.990"/></svg>
+        </div>
         <h3>Income Annuities</h3>
-        <p>Convert a lump sum into guaranteed monthly income you can't outlive. Eliminate the fear of running out of money in retirement with a personal pension-like stream.</p>
+        <p>Convert a lump sum into guaranteed monthly income you can't outlive. Eliminate the fear of running out of money with a personal pension-like stream.</p>
+        <a href="https://calendly.com/bcbloom3865" target="_blank" class="service-link">Learn More <span>→</span></a>
       </div>
     </div>
     <div style="text-align:center;margin-top:48px;" class="reveal">
@@ -344,9 +408,10 @@
   <div class="section-header reveal">
     <div class="section-tag">How It Works</div>
     <h2 class="section-title">Getting Protected Is Simple</h2>
-    <p class="section-desc">I've made the process easy, fast, and completely free for you. No obligation, no pressure — just expert guidance.</p>
+    <p class="section-desc">Easy, fast, and completely free for you. No obligation, no pressure — just expert guidance every step of the way.</p>
   </div>
   <div class="process-steps">
+    <div class="process-connector"></div>
     <div class="process-step reveal">
       <div class="process-num">1</div>
       <h4>Free Consultation</h4>
@@ -355,12 +420,12 @@
     <div class="process-step reveal">
       <div class="process-num">2</div>
       <h4>Custom Comparison</h4>
-      <p>I shop 27+ A-rated carriers and present you with the best options tailored to your needs.</p>
+      <p>I shop 27+ A-rated carriers and present the best options tailored specifically to your needs.</p>
     </div>
     <div class="process-step reveal">
       <div class="process-num">3</div>
       <h4>You Decide</h4>
-      <p>No pressure. Take your time. I'll answer every question until you feel confident in your choice.</p>
+      <p>No pressure. Take your time. I'll answer every question until you feel fully confident.</p>
     </div>
     <div class="process-step reveal">
       <div class="process-num">4</div>
@@ -370,12 +435,12 @@
   </div>
 </section>
 
-<!-- CONSULTING BANNER -->
+<!-- CONSULTING BANNER (new photo cb_assit_2) -->
 <div class="consulting-banner">
-  <img src="assets/images/consulting.jpg" alt="Cleveland Bloomfield consulting with clients about annuities and insurance options">
+  <img src="assets/images/consulting2.jpg" alt="Cleveland Bloomfield consulting with clients about insurance options at Classique Insurance Group LLC">
   <div class="consulting-overlay">
     <div class="consulting-text">
-      <div class="tag">How I Work</div>
+      <div class="tag">How We Work</div>
       <h2>Guidance. Security.<br><em>Peace of Mind.</em></h2>
       <p>Planning today for a better tomorrow. Every consultation is personal, unhurried, and focused entirely on what's right for you and your family.</p>
       <a href="https://calendly.com/bcbloom3865" target="_blank" class="btn-primary">Book Your Consultation →</a>
@@ -383,12 +448,150 @@
   </div>
 </div>
 
+<!-- TESTIMONIALS -->
+<section class="testimonials-section" id="testimonials">
+  <div class="section-header reveal">
+    <div class="section-tag">Client Stories</div>
+    <h2 class="section-title">Real People. Real Results.</h2>
+    <p class="section-desc">Trusted by families across Southwest Florida and beyond to protect what matters most.</p>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">"Cleveland took the time to explain every Medicare option clearly. I never felt rushed or pressured. He found me a plan that saved me over $200 a month compared to what I had. I couldn't be more grateful."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">M</div>
+        <div>
+          <div class="author-name">Margaret T.</div>
+          <div class="author-location">Port Charlotte, FL</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal featured-testimonial">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">"As a veteran and former law enforcement officer himself, Cleveland truly understands service and sacrifice. He structured a final expense policy that gave our entire family peace of mind. Highly recommend Classique Insurance Group."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">R</div>
+        <div>
+          <div class="author-name">Robert &amp; Diana K.</div>
+          <div class="author-location">Fort Myers, FL</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">"Cleveland helped us set up an IUL for our two kids. He explained exactly how it works and why it's a smart move for their future. You can tell this man genuinely cares about the families he works with."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">J</div>
+        <div>
+          <div class="author-name">James &amp; Priya S.</div>
+          <div class="author-location">Sarasota, FL</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">"I was completely lost with annuities until I met Cleveland. He laid everything out in plain English, compared options from multiple carriers, and I ended up with guaranteed income I feel secure about. Total professional."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">D</div>
+        <div>
+          <div class="author-name">Donna W.</div>
+          <div class="author-location">Punta Gorda, FL</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="testimonials-cta reveal">
+    <p>Join hundreds of families already protected by Classique Insurance Group</p>
+    <a href="https://calendly.com/bcbloom3865" target="_blank" class="btn-primary">Start Your Free Consultation →</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="faq-inner">
+    <div class="section-header reveal">
+      <div class="section-tag">Common Questions</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-desc">Answers to the questions we hear most often from clients across Florida and beyond.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>How much does it cost to work with you?</span>
+          <div class="faq-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><path d="M19 9l-7 7-7-7"/></svg>
+          </div>
+        </button>
+        <div class="faq-answer">
+          <p>Nothing. My services are completely free to you. I'm paid a commission by the insurance carrier when you enroll in a policy — which means you get expert guidance, comparison shopping across 27+ carriers, and personalized recommendations at zero cost to you.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>What states are you licensed in?</span>
+          <div class="faq-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><path d="M19 9l-7 7-7-7"/></svg>
+          </div>
+        </button>
+        <div class="faq-answer">
+          <p>I'm currently licensed in Florida, Texas, North Carolina, and Pennsylvania. While I'm based in Southwest Florida and serve the entire state of Florida, I can help clients in those other states as well. If you're in a different state, reach out — we may still be able to help.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>What's the difference between an independent broker and a captive agent?</span>
+          <div class="faq-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><path d="M19 9l-7 7-7-7"/></svg>
+          </div>
+        </button>
+        <div class="faq-answer">
+          <p>A captive agent works for one company and can only sell that company's products. As an independent broker, I work for <em>you</em> — I have access to 27+ A-rated insurance carriers and can compare plans across all of them to find the one that truly fits your needs and budget. No bias, no pressure.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>When is the best time to enroll in Medicare?</span>
+          <div class="faq-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><path d="M19 9l-7 7-7-7"/></svg>
+          </div>
+        </button>
+        <div class="faq-answer">
+          <p>The Initial Enrollment Period starts 3 months before your 65th birthday and ends 3 months after. Missing this window can result in late enrollment penalties. The Annual Enrollment Period for plan changes runs October 15 – December 7 each year. I'll make sure you never miss a deadline.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>What is an IUL and is it right for me?</span>
+          <div class="faq-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><path d="M19 9l-7 7-7-7"/></svg>
+          </div>
+        </button>
+        <div class="faq-answer">
+          <p>An Indexed Universal Life (IUL) is a permanent life insurance policy that also builds cash value linked to a market index — with a floor to protect against losses. It can serve as a tax-advantaged retirement income strategy in addition to providing a death benefit. Whether it's right for you depends on your age, goals, and financial situation. Let's talk — that's what I'm here for.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Can I get a Marketplace health plan outside of open enrollment?</span>
+          <div class="faq-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><path d="M19 9l-7 7-7-7"/></svg>
+          </div>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, in many cases. If you experience a qualifying life event — such as losing employer coverage, getting married, having a baby, or moving — you may be eligible for a Special Enrollment Period. I'll help you determine your eligibility and find the best ACA Marketplace plan for your family.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section class="contact-section" id="contact">
   <div class="section-header reveal">
     <div class="section-tag">Get in Touch</div>
     <h2 class="section-title">Start Your Free Consultation Today</h2>
-    <p class="section-desc">Serving Port Charlotte, Cape Coral, Fort Myers, Sarasota, Punta Gorda, and all of Southwest Florida.</p>
+    <p class="section-desc">Serving all of Florida, Texas, North Carolina &amp; Pennsylvania. Based in SW Florida.</p>
   </div>
   <div class="contact-inner">
     <div class="contact-info reveal">
@@ -397,14 +600,21 @@
           <div class="contact-item-icon">📞</div>
           <div>
             <h4>Phone</h4>
-            <p><a href="tel:7547574524">(754) 757-4524</a></p>
+            <p><a href="tel:9412766928">(941) 276-6928</a></p>
           </div>
         </div>
         <div class="contact-item">
           <div class="contact-item-icon">📍</div>
           <div>
             <h4>Location</h4>
-            <p>Port Charlotte, Florida<br><span style="font-size:13px;color:rgba(255,255,255,0.5)">Serving all of Southwest Florida</span></p>
+            <p>SW Florida<br><span style="font-size:13px;color:rgba(255,255,255,0.5)">Serving the entire state of Florida</span></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">🗺️</div>
+          <div>
+            <h4>Licensed States</h4>
+            <p style="font-size:14px;">Florida · Texas · North Carolina · Pennsylvania</p>
           </div>
         </div>
         <div class="contact-item">
@@ -425,7 +635,7 @@
     </div>
 
     <div class="contact-form-card reveal">
-      <h3>Send Me a Message</h3>
+      <h3>Send a Message</h3>
       <form onsubmit="handleSubmit(event)">
         <div class="form-group">
           <label>Full Name</label>
@@ -447,6 +657,9 @@
             <option>Final Expense</option>
             <option>Annuities / Retirement Income</option>
             <option>Mortgage Protection</option>
+            <option>IUL / Retirement Planning</option>
+            <option>Children's Health Plans</option>
+            <option>Marketplace Health Plans</option>
             <option>Not Sure Yet — Let's Talk</option>
           </select>
         </div>
@@ -462,27 +675,38 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">Cleveland Bloomfield</div>
-  <div class="footer-sub">Licensed Insurance Specialist · Port Charlotte, FL</div>
+  <div class="footer-logo">Classique Insurance Group LLC</div>
+  <div class="footer-agent">Cleveland Bloomfield · Licensed Insurance Broker</div>
   <div class="footer-links">
     <a href="#home">Home</a>
     <a href="#services">Services</a>
     <a href="#medicare">Medicare</a>
     <a href="#annuities">Annuities</a>
     <a href="#about">About</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#faq">FAQ</a>
     <a href="#contact">Contact</a>
-    <a href="tel:7547574524">(754) 757-4524</a>
+    <a href="tel:9412766928">(941) 276-6928</a>
+  </div>
+  <div class="footer-states">
+    <span>Licensed in:</span>
+    <span class="state-pill">Florida</span>
+    <span class="state-pill">Texas</span>
+    <span class="state-pill">North Carolina</span>
+    <span class="state-pill">Pennsylvania</span>
   </div>
   <div class="footer-copy">
-    © 2025 Cleveland Bloomfield · NPN# 18429314 · Port Charlotte, Florida<br>
-    Serving Charlotte, Lee, Sarasota, DeSoto, and Manatee Counties
+    © 2025 Classique Insurance Group LLC · Cleveland Bloomfield · NPN# 18429314<br>
+    SW Florida · Serving Charlotte, Lee, Sarasota, DeSoto &amp; Manatee Counties and the entire state of Florida
   </div>
   <div class="footer-disc">
-    Licensed insurance agent in the state of Florida. This is not a government website. Not affiliated with Medicare or any federal agency. Availability of plans varies by location.
+    Licensed insurance agent in Florida, Texas, North Carolina, and Pennsylvania. This is not a government website. Not affiliated with Medicare or any federal agency. Availability of plans varies by location.
   </div>
 </footer>
 
-<a href="tel:7547574524" class="float-call" title="Call Cleveland">📞</a>
+<a href="tel:9412766928" class="float-call" title="Call Cleveland">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"/></svg>
+</a>
 
 <script src="script.js"></script>
 </body>
