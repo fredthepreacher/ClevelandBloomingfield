@@ -636,7 +636,8 @@
 
     <div class="contact-form-card reveal">
       <h3>Send a Message</h3>
-      <form onsubmit="handleSubmit(event)">
+      <form name="Classique Insurance Inquiry" method="POST" data-netlify="true" action="/thank-you.html">
+<input type="hidden" name="form-name" value="Classique Insurance Inquiry">
         <div class="form-group">
           <label>Full Name</label>
           <input type="text" placeholder="Jane Smith" required>
@@ -665,7 +666,20 @@
         </div>
         <div class="form-group">
           <label>Message (Optional)</label>
-          <textarea placeholder="Tell me a bit about your situation..."></textarea>
+          
+<div class="form-group">
+<label>What are you interested in?</label>
+<select name="service" required>
+<option value="">Select an option</option>
+<option>Health Insurance</option>
+<option>Retirement Planning</option>
+<option>Medicare</option>
+<option>Annuities</option>
+<option>Life Insurance</option>
+</select>
+</div>
+
+<textarea placeholder="Tell me a bit about your situation..."></textarea>
         </div>
         <button type="submit" class="form-submit">Send Message →</button>
       </form>
