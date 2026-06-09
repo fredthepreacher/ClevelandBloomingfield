@@ -12,15 +12,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <!-- NAV -->
 <nav id="navbar">
-  <a href="#" class="nav-logo">
-    <span class="logo-main">Classique Insurance Group</span>
-    <span class="logo-sub">LLC · Cleveland Bloomfield</span>
+  <a href="#home" class="nav-logo" aria-label="Classique Insurance Group Home">
+    <img src="assets/logos/classique-horizontal-logo.png" alt="Classique Insurance Group LLC" class="nav-logo-img">
   </a>
   <ul class="nav-links" id="navLinks">
     <li><a href="#services">Services</a></li>
@@ -45,6 +47,7 @@
         <span class="badge-dot"></span>
         Licensed in FL · TX · NC · PA
       </div>
+      <img src="assets/logos/classique-primary-logo.png" alt="Classique Insurance Group LLC" class="hero-brand-logo">
       <h1>Your Family Deserves a Plan Built for <em>Their</em> Future</h1>
       <p class="hero-sub">
         Classique Insurance Group LLC — independent broker Cleveland Bloomfield compares 27+ A-rated carriers to find the right life, health, and retirement coverage for you and the people you love most.
@@ -635,51 +638,38 @@
     </div>
 
     <div class="contact-form-card reveal">
+      <img src="assets/logos/classique-wordmark-logo.png" alt="Classique Insurance Group LLC" class="contact-form-logo">
       <h3>Send a Message</h3>
-      <form name="Classique Insurance Inquiry" method="POST" data-netlify="true" action="/thank-you.html">
-<input type="hidden" name="form-name" value="Classique Insurance Inquiry">
+      <form name="Classique Insurance Inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+        <input type="hidden" name="form-name" value="Classique Insurance Inquiry">
+        <p class="hidden-field"><label>Do not fill this out: <input name="bot-field"></label></p>
         <div class="form-group">
-          <label>Full Name</label>
-          <input type="text" placeholder="Jane Smith" required>
+          <label for="full-name">Full Name</label>
+          <input id="full-name" name="full-name" type="text" placeholder="Jane Smith" required>
         </div>
         <div class="form-group">
-          <label>Phone Number</label>
-          <input type="tel" placeholder="(555) 000-0000">
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" type="tel" placeholder="(555) 000-0000">
         </div>
         <div class="form-group">
-          <label>Email Address</label>
-          <input type="email" placeholder="jane@email.com" required>
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" placeholder="jane@email.com" required>
         </div>
         <div class="form-group">
-          <label>I'm Interested In</label>
-          <select>
+          <label for="service">I'm Interested In</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service</option>
+            <option>Health Insurance</option>
+            <option>Retirement Planning</option>
+            <option>Medicare</option>
+            <option>Annuities</option>
             <option>Life Insurance</option>
-            <option>Medicare Plans</option>
-            <option>Final Expense</option>
-            <option>Annuities / Retirement Income</option>
-            <option>Mortgage Protection</option>
-            <option>IUL / Retirement Planning</option>
-            <option>Children's Health Plans</option>
-            <option>Marketplace Health Plans</option>
             <option>Not Sure Yet — Let's Talk</option>
           </select>
         </div>
         <div class="form-group">
-          <label>Message (Optional)</label>
-          
-<div class="form-group">
-<label>What are you interested in?</label>
-<select name="service" required>
-<option value="">Select an option</option>
-<option>Health Insurance</option>
-<option>Retirement Planning</option>
-<option>Medicare</option>
-<option>Annuities</option>
-<option>Life Insurance</option>
-</select>
-</div>
-
-<textarea placeholder="Tell me a bit about your situation..."></textarea>
+          <label for="message">Message (Optional)</label>
+          <textarea id="message" name="message" placeholder="Tell me a bit about your situation..."></textarea>
         </div>
         <button type="submit" class="form-submit">Send Message →</button>
       </form>
@@ -689,6 +679,7 @@
 
 <!-- FOOTER -->
 <footer>
+  <img src="assets/logos/classique-shield-icon.png" alt="Classique shield" class="footer-shield">
   <div class="footer-logo">Classique Insurance Group LLC</div>
   <div class="footer-agent">Cleveland Bloomfield · Licensed Insurance Broker</div>
   <div class="footer-links">

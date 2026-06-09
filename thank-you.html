@@ -1,17 +1,32 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thank You | Classique Insurance</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You | Classique Insurance Group LLC</title>
+<meta name="description" content="Thank you for contacting Classique Insurance Group LLC.">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-body{background:#0A1628;color:white;font-family:'DM Sans',sans-serif;display:flex;justify-content:center;align-items:center;height:100vh;margin:0}
-.card{text-align:center;padding:40px;max-width:700px}
-h1{font-family:'Playfair Display',serif;color:#E8C878}
-a{background:#C9A84C;color:#0A1628;padding:14px 24px;border-radius:8px;text-decoration:none;font-weight:bold}
-img{max-width:220px}
-</style></head>
-<body><div class="card">
-<img src="assets/classique-logo.png" alt="Classique Insurance Logo">
-<h1>Thank You!</h1>
-<p>Your inquiry has been received. A licensed Classique Insurance representative will contact you shortly.</p>
-<p><a href="index.html">Return Home</a></p>
-</div></body></html>
+:root{--navy:#0a1628;--gold:#c9a84c;--gold-light:#e8c878;--cream:#faf8f4}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:'DM Sans',sans-serif;background:radial-gradient(circle at top,#273650 0%,var(--navy) 44%,#050a13 100%);color:white;display:flex;align-items:center;justify-content:center;padding:32px}.thank-card{width:min(900px,100%);text-align:center;padding:44px 28px;border:1px solid rgba(201,168,76,.28);border-radius:28px;background:rgba(255,255,255,.06);box-shadow:0 30px 90px rgba(0,0,0,.35);backdrop-filter:blur(12px)}.thank-image{width:min(430px,100%);border-radius:22px;box-shadow:0 24px 70px rgba(0,0,0,.30);margin-bottom:22px}.shield{width:86px;margin:0 auto 12px;display:block;border-radius:12px}h1{font-family:'Playfair Display',serif;color:var(--gold-light);font-size:clamp(38px,7vw,74px);margin:10px 0 12px;line-height:1}p{max-width:650px;margin:0 auto 24px;color:rgba(255,255,255,.78);font-size:18px;line-height:1.65}.buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:26px}.btn{display:inline-block;padding:14px 24px;border-radius:999px;text-decoration:none;font-weight:700}.btn-primary{background:var(--gold);color:var(--navy)}.btn-secondary{border:1px solid rgba(201,168,76,.55);color:var(--gold-light)}.mini{font-size:13px;color:rgba(255,255,255,.5);margin-top:28px}
+</style>
+</head>
+<body>
+  <main class="thank-card">
+    <img src="assets/logos/classique-thank-you-card.png" alt="Thank You — Classique Insurance Group LLC" class="thank-image">
+    <img src="assets/logos/classique-shield-icon.png" alt="Classique shield" class="shield">
+    <h1>Thank You</h1>
+    <p>Your inquiry has been received successfully. A licensed Classique Insurance professional will review your information and contact you shortly.</p>
+    <div class="buttons">
+      <a href="index.html" class="btn btn-primary">Return Home</a>
+      <a href="https://calendly.com/bcbloom3865" target="_blank" class="btn btn-secondary">Schedule Consultation</a>
+    </div>
+    <div class="mini">Classique Insurance Group LLC · Guidance • Security • Peace of Mind</div>
+  </main>
+</body>
+</html>
