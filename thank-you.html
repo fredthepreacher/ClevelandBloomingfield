@@ -1,155 +1,31 @@
-// ─── Scroll Reveal ───────────────────────────────────────────
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
-    if (entry.isIntersecting) {
-      setTimeout(() => entry.target.classList.add('visible'), i * 75);
-      revealObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-
-document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-
-// ─── Sticky Nav ──────────────────────────────────────────────
-const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  if (navbar) {
-    navbar.classList.toggle('scrolled', window.scrollY > 60);
-  }
-});
-
-// ─── Mobile Menu ─────────────────────────────────────────────
-let mobilePanel = null;
-
-function toggleMenu() {
-  if (!mobilePanel) {
-    mobilePanel = document.createElement('div');
-    mobilePanel.className = 'mobile-nav-panel';
-    const links = [
-      ['#services', 'Services'],
-      ['#medicare', 'Medicare'],
-      ['#annuities', 'Annuities'],
-      ['#about', 'About'],
-      ['#testimonials', 'Reviews'],
-      ['#faq', 'FAQ'],
-      ['#contact', 'Contact'],
-      ['tel:9412766928', '📞 (941) 276-6928'],
-    ];
-    links.forEach(([href, label]) => {
-      const a = document.createElement('a');
-      a.href = href;
-      a.textContent = label;
-      a.addEventListener('click', closeMenu);
-      mobilePanel.appendChild(a);
-    });
-    document.body.appendChild(mobilePanel);
-  }
-
-  const isOpen = mobilePanel.classList.contains('open');
-  if (isOpen) {
-    closeMenu();
-  } else {
-    mobilePanel.classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-}
-
-function closeMenu() {
-  if (mobilePanel) {
-    mobilePanel.classList.remove('open');
-    document.body.style.overflow = '';
-  }
-}
-
-// Close on outside click
-document.addEventListener('click', (e) => {
-  if (mobilePanel && mobilePanel.classList.contains('open')) {
-    if (!navbar.contains(e.target) && !mobilePanel.contains(e.target)) {
-      closeMenu();
-    }
-  }
-});
-
-// ─── FAQ Accordion ───────────────────────────────────────────
-function toggleFaq(btn) {
-  const item = btn.closest('.faq-item');
-  const answer = item.querySelector('.faq-answer');
-  const isOpen = item.classList.contains('open');
-
-  // Close all
-  document.querySelectorAll('.faq-item.open').forEach(openItem => {
-    openItem.classList.remove('open');
-    const a = openItem.querySelector('.faq-answer');
-    if (a) a.classList.remove('open');
-  });
-
-  // Open this one if it wasn't open
-  if (!isOpen) {
-    item.classList.add('open');
-    answer.classList.add('open');
-  }
-}
-
-// ─── Contact Form ────────────────────────────────────────────
-function handleSubmit(e) {
-  e.preventDefault();
-  const btn = e.target.querySelector('.form-submit');
-  const original = btn.textContent;
-  btn.textContent = '✓ Message Sent! I\'ll be in touch soon.';
-  btn.style.cssText = 'background:#10b981;color:white;width:100%;padding:13px;border-radius:10px;border:none;font-size:15px;font-weight:600;cursor:default;letter-spacing:0.02em;';
-  e.target.reset();
-  setTimeout(() => {
-    btn.textContent = original;
-    btn.removeAttribute('style');
-  }, 5000);
-}
-
-// ─── Hero Particles ──────────────────────────────────────────
-(function spawnParticles() {
-  const container = document.getElementById('particles');
-  if (!container) return;
-  const count = 28;
-  for (let i = 0; i < count; i++) {
-    const p = document.createElement('div');
-    p.className = 'particle';
-    p.style.cssText = `
-      left: ${Math.random() * 100}%;
-      top: ${Math.random() * 100}%;
-      --dur: ${3 + Math.random() * 5}s;
-      --delay: ${Math.random() * 6}s;
-      opacity: 0;
-    `;
-    container.appendChild(p);
-  }
-})();
-
-// ─── Smooth Anchor with Offset ───────────────────────────────
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      e.preventDefault();
-      const offset = 80;
-      const top = target.getBoundingClientRect().top + window.scrollY - offset;
-      window.scrollTo({ top, behavior: 'smooth' });
-    }
-  });
-});
-
-// ─── Active Nav Highlighting ─────────────────────────────────
-const sections = document.querySelectorAll('section[id], div[id]');
-const navLinkEls = document.querySelectorAll('.nav-links a');
-
-const sectionObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      navLinkEls.forEach(link => {
-        link.style.color = link.getAttribute('href') === `#${entry.target.id}`
-          ? 'var(--gold)'
-          : '';
-      });
-    }
-  });
-}, { threshold: 0.4 });
-
-sections.forEach(section => sectionObserver.observe(section));
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You | Classique Insurance Group LLC</title>
+<meta name="description" content="Thank you for contacting Classique Insurance Group LLC.">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0a1628;--gold:#c9a84c;--gold-light:#e8c878;--cream:#faf8f4}*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:'DM Sans',sans-serif;background:radial-gradient(circle at top,#273650 0%,var(--navy) 48%,#050a13 100%);color:white;display:flex;align-items:center;justify-content:center;padding:28px}.thank-card{width:min(820px,100%);text-align:center;padding:46px 28px;border:1px solid rgba(201,168,76,.30);border-radius:28px;background:rgba(255,255,255,.055);box-shadow:0 30px 90px rgba(0,0,0,.35);backdrop-filter:blur(12px)}.brand-logo{width:min(520px,100%);height:auto;margin:0 auto 22px;display:block}.eyebrow{color:var(--gold-light);font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin:8px 0 12px;font-size:14px}h1{font-family:'Playfair Display',serif;color:var(--cream);font-size:clamp(44px,8vw,82px);margin:0 0 16px;line-height:1;text-shadow:0 3px 18px rgba(0,0,0,.32)}p{max-width:650px;margin:0 auto 26px;color:rgba(255,255,255,.82);font-size:18px;line-height:1.65}.buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:14px 24px;border-radius:999px;text-decoration:none;font-weight:800}.btn-primary{background:var(--gold);color:var(--navy)}.btn-secondary{border:1px solid rgba(201,168,76,.60);color:var(--gold-light)}.mini{font-size:13px;color:rgba(255,255,255,.55);margin-top:28px}@media(max-width:560px){.thank-card{padding:34px 20px}.brand-logo{width:100%}p{font-size:16px}.buttons{flex-direction:column}.btn{width:100%}}
+</style>
+</head>
+<body>
+  <main class="thank-card">
+    <img src="assets/logos/classique-primary-logo.png" alt="Classique Insurance Group LLC" class="brand-logo">
+    <div class="eyebrow">Message Received</div>
+    <h1>Thank You</h1>
+    <p>Your inquiry has been received successfully. A licensed Classique Insurance professional will review your information and contact you shortly.</p>
+    <div class="buttons">
+      <a href="index.html" class="btn btn-primary">Return Home</a>
+      <a href="https://calendly.com/bcbloom3865" target="_blank" class="btn btn-secondary">Schedule Consultation</a>
+    </div>
+    <div class="mini">Classique Insurance Group LLC · Guidance • Security • Peace of Mind</div>
+  </main>
+</body>
+</html>
